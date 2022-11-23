@@ -1,8 +1,9 @@
 import './App.css'
-import { Button, Container , ButtonGroup, Link , Text , Flex , Box , Stack } from '@chakra-ui/react'
+import { Button, Container , ButtonGroup, Link , Image , Text , Flex , Box , Stack } from '@chakra-ui/react'
+import Login from './components/Login'
+import image1 from './assets/react.svg'
 function App() {
   
-
   return (
     <>
       <Box boxShadow='xl' bgColor='white' color='black'>
@@ -10,7 +11,7 @@ function App() {
         <Stack py={4} px={4} >
           <Flex alignItems={'center'} justify='space-between'>
             <Box>
-              <Text>Login Page</Text>
+              <Image src={image1}/>
             </Box>
 
             <Flex gap={4}>
@@ -21,11 +22,11 @@ function App() {
         </Stack>
         </Container>
       </Box>
-      <Box>
-        <Text noOfLines={[1,2,3]}>
-          Hello World
-        </Text>
+
+      <Box>  
+        <Login />
       </Box>
+      
     </>
   );
 }
